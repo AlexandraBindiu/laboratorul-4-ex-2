@@ -13,7 +13,13 @@ namespace TemaLab4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(args.Length);
+            if (args.Length == 0)
+                Console.Write("Linia de comanda nu contine argumente");
+            else
+            {
+                // afisarea numarului de argumente
+                Console.WriteLine("Numarul de argumente este: {0}", args.Length);
+            }
 
             bool gasit;
             for (int i = 65; i < 91; i++)
